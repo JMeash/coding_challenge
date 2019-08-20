@@ -1,0 +1,22 @@
+{
+  "name": "coding_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/back/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "uuid": "3.3.2",
+    "dotenv": "^8.0.0",
+    "mongodb": "^3.3.0",
+    "joi": "^14.3.1",
+    "jest": "^24.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMeash/coding_challenge.git"
+  },
+  "author": "José Manuel Medrano Martínez"
+}

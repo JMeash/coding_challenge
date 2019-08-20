@@ -1,0 +1,21 @@
+version: "3"
+services:
+  #app:
+  #  container_name: app
+  #  restart: always
+  #  build: .
+  #  ports:
+  #    - "3000:3000"
+  #  links:
+  #    - mongo
+  mongodb:
+    container_name: db_hermes
+    image: mongo
+    ports:
+    - "27017:27017"
+
+  mongo-seed:
+    build: ./data/db/mongo-seed
+    links:
+    - mongodb
+    restart: on-failure
